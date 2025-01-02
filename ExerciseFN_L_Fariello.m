@@ -131,14 +131,14 @@ for it = 1:Nt
         
         % Andamento della velocita della parete
         figure(1);
-        plot(Dt:Dt:Nt*Dt,u_w) 
+        plot(Dt:Dt:Nt*Dt,u_w);
         title('Velocity'); 
         axis([0 T -3 3]); grid on;
         xlabel('t'); ylabel('u_w(t)'); hold on
         
         % Evoluzione del campo di moto
         figure(2);clf;
-        pcolor(x,y,ZITA'); shading interp; colormap jet; hold on
+        pcolor(x,y,ZITA'); shading interp; colormap jet;colorbar('northoutside'); hold on
         vneg = linspace(min(min(PSI)),0,10);
         vpos = linspace(0,max(max(PSI)),10);
         contour(x,y,PSI',vneg,'k'); axis square; hold on;
