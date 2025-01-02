@@ -1,4 +1,4 @@
-% Driven Cavity Flow in Slender Cavities with Unsteady Lid Velocity  
+Driven Cavity Flow in Slender Cavities with Unsteady Lid Velocity  
 Code for simulating the 2D incompressible Navier-Stokes equations  
 using the vorticity-streamfunction formulation ('psi-zita' model).  
 The problem addressed in this code is the flow inside a customizable  
